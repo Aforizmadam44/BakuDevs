@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Mulish", sans-serif;
+}
+:root {
+  font-size: calc(6px+2vw);
+}
+:root {
+  --font-family: "Lora", serif;
+}
+:root {
+  --currentColor: #008d96;
+}
+:root {
+  --secondColor: #f5af15;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  margin: 2rem 0;
+}
+.navbarCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+}
+.navbarCenter .menuItems a,
+.loveList a {
+  display: flex;
+  gap: 0.3rem;
+  color: var(--currentColor);
+}
+.navbarButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+.navbarEnter a,
+.navbarQuit a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+}
+.navbarEnter a {
+  color: var(--currentColor);
+  gap: 0.2rem;
+}
+.navbarQuit a {
+  color: #fff;
+  gap: 0.2rem;
+}
+.navbarEnter {
+  border: 1px solid var(--currentColor);
+  border-radius: 50px;
+  gap: 0.75rem;
+}
+.navbarQuit {
+  background-color: var(--currentColor);
+  color: #fff;
+  border-radius: 50px;
+  gap: 0.75rem;
+  border: none;
+}
