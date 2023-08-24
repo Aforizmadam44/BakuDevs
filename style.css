@@ -152,4 +152,65 @@
   margin: 0 0.3rem;
   border: 1px solid var(--currentColor);
   border-radius: 5px;
+  transition: 0.5s;
+}
+.coursesListButton:hover {
+  box-shadow: 0 0 10px var(--secondColor);
+  transform: scale(1.1);
+}
+.coursesCards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+  margin: 5rem 0;
+}
+.coursesCard {
+  box-shadow: 0 0 10px silver;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.coursesCard:hover {
+  transform: scale(1.05);
+}
+.coursesCard img {
+  width: 18rem;
+  height: 13rem;
+  border-radius: 10px;
+}
+.coursesCardName {
+  display: flex;
+  gap: 9rem;
+  margin: 1rem 0;
+}
+.coursesCardNameP {
+  padding: 0.2rem;
+  border-radius: 5px;
+  width: auto;
+  height: 10%;
+  background-color: rgb(255, 174, 0);
+}
+.lessonCount,
+.lessonCount a {
+  display: flex;
+  align-items: center;
+  color: silver;
+}
+.divider {
+  width: 90%;
+  border-bottom: 1px solid silver;
+  height: 1%;
+  margin: 1rem 0.5rem;
+}
+.coursesCardContent {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+.coursesCardContent a {
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  background-color: var(--currentColor);
+  color: #fff;
 }
