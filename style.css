@@ -66,6 +66,11 @@
   border: 1px solid var(--currentColor);
   border-radius: 50px;
   gap: 0.75rem;
+  transition: 0.5s;
+}
+.navbarEnter:hover {
+  box-shadow: 0 0 5px var(--secondColor);
+  transform: scale(1.1);
 }
 .navbarQuit {
   background-color: var(--currentColor);
@@ -73,6 +78,11 @@
   border-radius: 50px;
   gap: 0.75rem;
   border: none;
+  transition: 0.5s;
+}
+.navbarQuit:hover {
+  box-shadow: 0 0 5px var(--secondColor);
+  transform: scale(1.1);
 }
 .navbarContent {
   margin: 4rem 0;
@@ -92,6 +102,7 @@
   justify-content: center;
   gap: 1rem;
 }
+
 .navbarContentButton {
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -99,6 +110,11 @@
   background-color: var(--currentColor);
   border-radius: 50px;
   margin: 2rem 0;
+  transition: 0.5s;
+}
+.navbarContentButton:hover {
+  box-shadow: 0 0 5px var(--secondColor);
+  transform: scale(1.1);
 }
 .navbarContentRight {
   position: relative;
