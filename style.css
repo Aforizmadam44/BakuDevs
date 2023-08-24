@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Mulish", sans-serif;
+  outline: none;
 }
 :root {
   font-size: calc(6px+2vw);
@@ -29,6 +30,7 @@
 }
 .navbar {
   margin: 2rem 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e3f1f2 100%);
 }
 .navbarCenter {
   display: flex;
@@ -71,4 +73,44 @@
   border-radius: 50px;
   gap: 0.75rem;
   border: none;
+}
+.navbarContent {
+  margin: 4rem 0;
+}
+.navbarContentLeft {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  width: 40%;
+}
+.navbarContentLeft span {
+  color: var(--secondColor);
+}
+.navbarContentButton a {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navbarContentButton {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  background-color: var(--currentColor);
+  border-radius: 50px;
+  margin: 2rem 0;
+}
+.navbarContentRight {
+  position: relative;
+}
+.navbarContentRight:after {
+  content: "";
+  position: absolute;
+  top: 7rem;
+  right: 1rem;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--currentColor);
 }
