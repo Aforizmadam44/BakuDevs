@@ -235,6 +235,22 @@
 }
 .aboutPageCards {
   width: 50%;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+.aboutPageCards2 {
+  position: relative;
+  top: 2rem;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.aboutPageCards1 {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 .aboutPageCard {
   padding: 1rem;
@@ -260,6 +276,7 @@
 .aboutPageH4 {
   text-align: center;
   color: #939393;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .coursesCards {
