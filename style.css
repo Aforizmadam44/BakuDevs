@@ -223,6 +223,43 @@
 }
 .aboutPage {
   background-color: #e3f1f2;
+  padding: 10rem;
+}
+.aboutPageTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.aboutPageTitle h2 {
+  font-size: 2.2rem;
+}
+.aboutPageCards {
+  width: 50%;
+}
+.aboutPageCard {
+  padding: 1rem;
+  width: 296px;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.miniIcons {
+  background-color: #f57170;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.aboutPageH4 {
+  text-align: center;
+  color: #939393;
 }
 @media (max-width: 768px) {
   .coursesCards {
