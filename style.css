@@ -221,7 +221,9 @@
   transition: 0.5s;
   cursor: pointer;
 }
-
+.aboutPage {
+  background-color: #e3f1f2;
+}
 @media (max-width: 768px) {
   .coursesCards {
     display: grid;
