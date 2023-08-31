@@ -263,6 +263,12 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.aboutPageCard:hover {
+  box-shadow: 0 0 10px var(--secondColor);
+  transform: scale(1.1);
 }
 .miniIcons {
   background-color: #f57170;
@@ -289,6 +295,44 @@
   position: absolute;
   left: 2%;
 }
+footer {
+  background-color: rgb(5, 118, 129);
+  padding: 4rem 0;
+  gap: 2rem;
+}
+
+.footer-center1,
+.footer-center2,
+.footer-centerEnd {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-center1 a,
+.footer-center2 a {
+  color: #fff;
+  list-style: circle;
+}
+.footerInput {
+  padding: 1.3rem 4rem;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  position: relative;
+}
+.footerInputArrow {
+  background-color: orange;
+  width: 100px;
+  height: 60px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 4.2rem;
+  left: 13rem;
+}
+
 @media (max-width: 768px) {
   .coursesCards {
     display: grid;
