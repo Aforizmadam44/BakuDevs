@@ -5,7 +5,10 @@
   list-style: none;
   font-family: "Mulish", sans-serif;
   outline: none;
+  box-sizing: border-box;
+  object-fit: cover;
 }
+
 :root {
   font-size: calc(6px+2vw);
 }
@@ -19,7 +22,7 @@
   --secondColor: #f5af15;
 }
 .container {
-  max-width: 1300px;
+  max-width: 1230px;
   width: 100%;
   margin: 0 auto;
 }
@@ -31,6 +34,8 @@
 .navbar {
   margin: 2rem 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e3f1f2 100%);
+  /* background-image: url(./assets/Img/Vector1.png); */
+  height: 100vh;
 }
 .navbarCenter {
   display: flex;
@@ -119,16 +124,16 @@
 .navbarContentRight {
   position: relative;
 }
-.navbarContentRight:after {
-  content: "";
+.imgCircles {
   position: absolute;
-  top: 7rem;
-  right: 1rem;
-  width: 30%;
-  height: 30%;
-  border-radius: 50%;
+  left: 15%;
   z-index: -1;
-  background-color: var(--currentColor);
+}
+.imgBalls {
+  position: absolute;
+  left: 18%;
+  top: 10%;
+  z-index: -1;
 }
 .coursesContentName h2 {
   font-size: 2rem;
@@ -160,57 +165,55 @@
 }
 .coursesCards {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
   margin: 5rem 0;
 }
 .coursesCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 0 10px silver;
   padding: 0.5rem;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
-}
-.coursesCard:hover {
-  transform: scale(1.05);
+  gap: 1rem;
 }
 .coursesCard img {
-  width: 18rem;
-  height: 13rem;
+  width: 100%;
+  height: 200px;
   border-radius: 10px;
 }
 .coursesCardName {
   display: flex;
-  gap: 9rem;
-  margin: 1rem 0;
-}
-.coursesCardNameP {
-  padding: 0.2rem;
-  border-radius: 5px;
-  width: auto;
-  height: 10%;
-  background-color: rgb(255, 174, 0);
-}
-.lessonCount,
-.lessonCount a {
-  display: flex;
-  align-items: center;
-  color: silver;
-}
-.divider {
-  width: 90%;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid silver;
-  height: 1%;
-  margin: 1rem 0.5rem;
+}
+
+.lessonCount {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: silver;
 }
 .coursesCardContent {
   display: flex;
-  gap: 8rem;
+  justify-content: space-between;
   align-items: center;
 }
+
 .coursesCardContent a {
   padding: 0.5rem 0.8rem;
   border-radius: 50%;
   background-color: var(--currentColor);
   color: #fff;
+}
+@media (max-width: 768px) {
+  .coursesCards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
