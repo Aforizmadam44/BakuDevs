@@ -211,6 +211,17 @@
   background-color: var(--currentColor);
   color: #fff;
 }
+.navbarBottomButton {
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  background-color: var(--currentColor);
+  border-radius: 50px;
+  margin: 2rem 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .coursesCards {
     display: grid;
