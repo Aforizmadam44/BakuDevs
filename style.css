@@ -278,6 +278,17 @@
   color: #939393;
   font-weight: 500;
 }
+.aboutPageMain {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutPageMainRight {
+  position: relative;
+}
+.cloudyIcons {
+  position: absolute;
+  left: 2%;
+}
 @media (max-width: 768px) {
   .coursesCards {
     display: grid;
